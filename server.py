@@ -104,7 +104,7 @@ class RequestHandler(SimpleXMLRPCRequestHandler):
     rpc_paths = ('/RPC2',)
 
 # Cria o servidor
-with SimpleXMLRPCServer(("172.31.117.17", 8000), requestHandler=RequestHandler) as server:
+with SimpleXMLRPCServer(("localhost", 8000), requestHandler=RequestHandler) as server:
     server.register_introspection_functions()
 
     # Registra a classe do servidor

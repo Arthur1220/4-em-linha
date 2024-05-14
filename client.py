@@ -62,7 +62,7 @@ def print_tabuleiro():
 def movimentar(coluna, player):
     frase = server.movimentar(coluna, player)
     
-    if frase ==  True:
+    if frase == True:
         print(' ')
     elif frase == 'Vez do oponente.':
         limpar_terminal()
